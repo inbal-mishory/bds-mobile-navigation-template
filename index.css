@@ -1,1 +1,133 @@
-/* Add your CSS here. Utilize Tailwind classes or write custom styles to bring your unique design to life. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    font-size: 10px;
+}
+
+body {
+    background: #E8EBF4;
+    font-family: "Source Sans Pro", system-ui;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navigation-container {
+    background: #ffffff;
+    width: 430px;
+    height: 870px;
+    border-radius: 4rem;
+    padding: 2rem;
+}
+
+.user-profile {
+    width: 386px;
+    display: flex;
+    column-gap: 2rem;
+    padding: 20px 0 28px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.avatar-image img {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.user-info {
+    font-size: 18px;
+}
+
+.user-info h3, .user-info p {
+    margin: 0;
+}
+
+section {
+    padding-top: 36px;
+}
+
+
+ul.options-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    row-gap: 22px;
+}
+
+.list-item {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 4rem 2fr auto;
+
+    &.divider {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        padding-bottom: 28px;
+    }
+
+    &.start {
+        padding-top: 1.6rem;
+    }
+}
+
+.item-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(151, 161, 240, 0.24);
+    border-radius: 8px;
+    padding: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item-text {
+    font-size: 18px;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.chevron {
+    display:flex;
+    align-items: center;
+}
+
+footer {
+    padding-top: 14rem;
+}
+
+.actions {
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+button:hover, button.active {
+    background: #E6E9FC;
+
+    img {
+        /*invert(0.5) sepia(1) saturate(3) hue-rotate(175deg)*/
+        filter: invert(51%) sepia(47%) saturate(452%) hue-rotate(189deg) brightness(95%) contrast(102%);
+    }
+}
+

@@ -1,63 +1,85 @@
-<html>
-  <head>
-    <!-- Our unique tag to identify the solution -->
-    <bds />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BigDevSoon Challenge</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Our unique tag to identify the solution -->
+<!--  <bds />-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigDevSoon Charts challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
+</head>
 
-    <!-- TailwindCSS for styling. Feel free to integrate other libraries as needed -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Add your external script links here, if any -->
-  </head>
-
-  <body
-    class="bg-gray-900 flex flex-col items-center justify-center min-h-screen"
-  >
-    <div
-      class="bg-white text-gray-800 p-8 space-y-4 shadow rounded-xl max-w-md md:max-w-lg"
-    >
-      <!-- Logo and Title -->
-      <img
-        src="https://mqzzwgavxmdmqvivwgez.supabase.co/storage/v1/object/public/previews/logo-challenge-template.svg"
-        alt="BigDevSoon Logo"
-        class="w-150 mx-auto"
-      />
-      <!-- Introduction and Instructions -->
-      <p class="text">
-        Utilize the tabs in <strong>BigDevSoon's challenge page</strong> to
-        access everything you need. The <strong>Instructions</strong> tab
-        contains specific details for implementing this task.
-      </p>
-
-      <!-- Encouragement for Creativity and Interaction -->
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          Be <strong>creative!</strong> Don't hesitate to bring your unique
-          ideas to life.
-        </li>
-        <li>
-          Interact with <strong>ChatGPT</strong> for coding assistance and
-          hints.
-        </li>
-        <li>
-          Connect with other developers who are tackling the same challenge in
-          the <strong>People</strong> tab.
-        </li>
-        <li>
-          Need a nudge in the right direction? Check out the
-          <strong>Help</strong> tab.
-        </li>
-      </ul>
-
-      <p class="text-sm border-t pt-6">
-        <strong>Tip</strong>: This example uses TailwindCSS for styling. Feel
-        free to integrate any other libraries using their respective CDNs to
-        enhance your project.
+<body>
+<main class="navigation-container">
+  <header class="user-profile">
+    <div class="avatar-image">
+      <img src="assets/avatar7.jpg" width="70" height="70" alt=""/>
+    </div>
+    <div class="user-info">
+      <h3>Lisa Richardson</h3>
+      <p class="user-profession">
+        Environmental meteorologist
       </p>
     </div>
-  </body>
+  </header>
+  <section class="main-content">
+    <ul class="options-list">
+      <li class="list-item">
+        <span class="item-icon"><img src="assets/users-solid.svg" width="20" height="20" alt="personal-data-icon"></span>
+        <span class="item-text">Personal Data</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""></span>
+      </li>
+      <li class="list-item">
+        <span class="item-icon"><img src="assets/message-fill.svg" width="20" height="20" alt="messages-icon"/></span>
+        <span class="item-text">Messages</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+      <li class="list-item">
+        <span class="item-icon"><img src="assets/notification.svg" width="20" height="20" alt="notifications-icon"/></span>
+        <span class="item-text">Notifications</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+      <li class="list-item">
+        <span class="item-icon"><img src="assets/location.svg" width="20" height="20" alt="location-icon"/></span>
+        <span class="item-text">Location</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+      <li class="list-item divider">
+        <span class="item-icon"><img src="assets/users-group-solid.svg" width="20" height="20" alt="community-icon"/></span>
+        <span class="item-text">Community</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+      <li class="list-item start">
+        <span class="item-icon"><img src="assets/info.svg" width="20" height="20" alt="community-icon"/></span>
+        <span class="item-text">FAQs</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+      <li class="list-item">
+        <span class="item-icon"><img src="assets/users-group-solid.svg" width="20" height="20" alt="community-icon"/></span>
+        <span class="item-text">Settings</span>
+        <span class="chevron"><img src="assets/chevron-right.svg" width="16" height="16" alt=""/></span>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <div class="actions">
+      <button>
+        <img src="assets/home.svg" width="24" height="26" alt=""/>
+      </button>
+      <button>
+        <img src="assets/statistic-up.svg" width="25" height="25" alt=""/>
+      </button>
+      <button>
+        <img src="assets/message.svg" width="24" height="26" alt=""/>
+      </button>
+      <button class="active">
+        <img src="assets/user.svg" width="24" height="26" alt=""/>
+      </button>
+    </div>
+  </footer>
+</main>
+</body>
 </html>
