@@ -126,7 +126,6 @@ button:hover, button.active {
     background: #E6E9FC;
 
     img {
-        /*invert(0.5) sepia(1) saturate(3) hue-rotate(175deg)*/
         filter: invert(51%) sepia(47%) saturate(452%) hue-rotate(189deg) brightness(95%) contrast(102%);
     }
 }
