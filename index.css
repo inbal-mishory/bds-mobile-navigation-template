@@ -31,12 +31,39 @@ body {
     padding: 2rem;
 }
 
+@media screen and (max-width: 425px) {
+    .navigation-container {
+        width: 416px;
+        height: auto;
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    .navigation-container {
+        width: 405px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navigation-container {
+        width: 316px;
+        height: auto;
+    } 
+}
+
 .user-profile {
     width: 386px;
     display: flex;
     column-gap: 2rem;
     padding: 20px 0 28px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 425px) {
+    .user-profile {
+        width: auto;
+    }
 }
 
 .avatar-image img {
@@ -64,6 +91,14 @@ ul.options-list {
     row-gap: 22px;
 }
 
+.list-item {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 4rem 2fr auto;
+    text-decoration: none;
+    color: #000000;
+}
+
 .item-icon {
     width: 40px;
     height: 40px;
@@ -75,29 +110,26 @@ ul.options-list {
     align-items: center;
 }
 
-.list-item {
-    display: grid;
-    column-gap: 20px;
-    grid-template-columns: 4rem 2fr auto;
-    text-decoration: none;
-    color: #000000;
-
-    &.divider {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-        padding-bottom: 28px;
-    }
-
-    &.start {
-        padding-top: 1.6rem;
-    }
-}
-
 .list-item:hover,
 .list-item:focus {
     color: #7188D9;
     .item-icon {
         background: rgba(151, 161, 240, 0.48);
     }
+
+    img {
+        filter: invert(51%) sepia(47%) saturate(452%) hue-rotate(189deg) brightness(95%) contrast(102%);
+    }
+}
+
+
+.divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    padding-bottom: 28px;
+}
+
+.start {
+    padding-top: 1.6rem;
 }
 
 .item-text {
@@ -113,6 +145,12 @@ ul.options-list {
 
 footer {
     padding-top: 14rem;
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        padding-top: 4rem;
+    }
 }
 
 .actions {
